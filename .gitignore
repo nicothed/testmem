@@ -1,0 +1,60 @@
+#
+# Ignores for Mac OS
+#
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+
+# Thumbnails and heapdumps
+._*
+heapdump*.heapsnapshot
+*.heapsnapshot
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+#
+# Ignores for Windows OS
+#
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+#
+# Project specific files
+#
+config
+node_modules
+npm-debug.log
+./downloads/
+dump-dir/
+tmp_img/
+exports/
+old/
+./old/
+.idea/
+.idea/workspace.xml
+data/db/
+data/db/local.0
+data/db/nicomac.0
+foursquare/
+.idea
+.git_
+.env
