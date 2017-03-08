@@ -60,9 +60,11 @@ MongoClient.connect(db_url, function dbConnected(err, MongoDB) {
 
     global.db = MongoDB;
 
-    console.log("Trying to listen to port 8989");
+    var thePort = process.env.PORT || ((process.env["TERM_PROGRAM"] == "Apple_Terminal") ? 8002 : 8002);      // 8003 when debugging from WebStorm to avoid conflict
+
+    console.log("Trying to listen to port " + thePort);
     var app = express();
-    var server = app.listen(8989, function (err) {
+    var server = app.listen(thePort, function (err) {
         if (err) {
             return console.log(JSON.stringify(err))
         } else {
