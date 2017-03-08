@@ -17,8 +17,8 @@ function displayMem() {
         global.gc();
         if (process.uptime() < 30) console.log( "thisAppID=" + thisAppID)
     } catch (err) {
-        console.log("You must run program with 'node --expose-gc server.js'; not measuring memory usage on this thread.");
-        console.log(JSON.stringify(err))
+        //console.log("You must run program with 'node --expose-gc server.js'; not measuring memory usage on this thread.");
+        //console.log(JSON.stringify(err))
         //return
         //process.exit();
     }
